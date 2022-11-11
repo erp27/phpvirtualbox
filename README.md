@@ -1,9 +1,6 @@
 # About
-
 phpVirtualBox is from 2017 maintained by Smart Guide Pty Ltd (tudor at smartguide dot com dot au)
-
 with support from various contributors (see https://github.com/phpvirtualbox/phpvirtualbox/graphs/contributors)
-
 Originally Copyright (C) 2015 Ian Moore (imoore76 at yahoo dot com)
 
 FREE, WITHOUT WARRANTY:
@@ -18,10 +15,8 @@ possession.
 
 # Installation from Zip file
 
-1) Download zip file from GitHub project site: https://github.com/phpvirtualbox/phpvirtualbox/archive/master.zip
-
+1) Download zip file from GitHub project site
 2) Unzip the zipfile into a folder accessible by your web server
-
 3) Rename config.php-example to config.php and edit as needed.
 
 Read the wiki for more information : https://github.com/phpvirtualbox/phpvirtualbox/wiki
