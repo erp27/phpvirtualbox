@@ -1,3 +1,8 @@
+#Introduction
+I am not a developer.
+All changes resulted in fully functional phpvirtualbox running on the Virtualbox 7.0.2 engine.
+Only tested on my hardware and software configuration.
+
 # About
 phpVirtualBox is from 2017 maintained by Smart Guide Pty Ltd (tudor at smartguide dot com dot au)
 with support from various contributors (see https://github.com/phpvirtualbox/phpvirtualbox/graphs/contributors)
