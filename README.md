@@ -1,5 +1,3 @@
-#Introduction
-I am not a developer.
 All changes resulted in fully functional phpvirtualbox running on the Virtualbox 7.0.2 engine.
 Only tested on my hardware and software configuration.
 
