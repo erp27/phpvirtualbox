@@ -1938,9 +1938,9 @@ class vboxconnector {
 		}
 
 		// Audio controller settings
-		$m->audioAdapter->enabled = ($args['audioAdapter']['enabled'] ? 1 : 0);
-		$m->audioAdapter->audioController = $args['audioAdapter']['audioController'];
-		$m->audioAdapter->audioDriver = $args['audioAdapter']['audioDriver'];
+		$m->audioSettings->Adapter->enabled = ($args['audioAdapter']['enabled'] ? 1: 0);
+		$m->audioSettings->Adapter->audioController = $args['audioAdapter']['audioController'];
+		$m->audioSettings->Adapter->audioDriver = $args['audioAdapter']['audioDriver'];
 
 		// Boot order
 		$mbp = $this->vbox->systemProperties->maxBootPosition;
@@ -3799,7 +3799,7 @@ class vboxconnector {
 
 
 		/* @var $m IMachine */
-		$m = $this->vbox->createMachine(null,$args['name'],($this->settings->phpVboxGroups ? '' : $args['group']),$args['ostype'],null,null);
+		$m = $this->vbox->createMachine(null,$args['name'],($this->settings->phpVboxGroups ? '' : $args['group']),$args['ostype'],null,null,null,null);
 
 		/* Check for phpVirtualBox groups */
 		if($this->settings->phpVboxGroups && $args['group']) {
@@ -4253,10 +4253,10 @@ class vboxconnector {
 				'VRDEExtPack' => (string)$m->VRDEServer->VRDEExtPack
 				)),
 			'audioAdapter' => array(
-				'enabled' => $m->audioAdapter->enabled,
-				'audioController' => (string)$m->audioAdapter->audioController,
-				'audioDriver' => (string)$m->audioAdapter->audioDriver,
-				),
+				'enabled' => $m->audioSettings->Adapter->enabled,
+				'audioController' => (string)$m->audioSettings->Adapter->audioController,
+				'audioDriver' => (string)$m->audioSettings->Adapter->audioDriver,
+			),
 			'RTCUseUTC' => $m->RTCUseUTC,
 		    'EffectiveParavirtProvider' => (string)$m->getEffectiveParavirtProvider(),
 			'HWVirtExProperties' => array(
